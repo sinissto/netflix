@@ -1,7 +1,8 @@
-import "./App.css";
+import "./App.scss";
+import Home from "./home/Home";
 
 function App() {
-  return <div className="App">Hello Sinisa</div>;
+  return <Home />;
 }
 
 export default App;
