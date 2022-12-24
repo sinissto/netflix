@@ -1,0 +1,94 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  //background-color: black;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("http://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+
+  .top {
+    .wrapper {
+      padding: 2rem 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 4rem;
+      }
+    }
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid white;
+    box-shadow: 0 0px 20px 10px rgb(255, 255, 255);
+    border-radius: 1rem;
+    overflow: hidden;
+
+    //padding: 2rem;
+
+    form {
+      background-color: var(--main-color);
+      height: 30rem;
+      width: 30rem;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        height: 4rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        background-color: gray;
+        color: white;
+        padding-left: 1rem;
+        border: none;
+
+        &::placeholder {
+          color: lightgray;
+        }
+      }
+
+      button {
+        height: 4rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        color: white;
+        background-color: red;
+        border: none;
+        font-size: 1.8rem;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:active {
+        transform: scale(0.95);
+      }
+
+      span {
+        color: lightgray;
+
+        b {
+          color: white;
+        }
+      }
+
+      small {
+        text-align: center;
+      }
+    }
+  }
+}
