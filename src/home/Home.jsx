@@ -1,7 +1,13 @@
 import "./home.scss";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
 
 const Home = () => {
-  return <h1 className={"home"}>Home page</h1>;
+  return (
+    <div className={"home"}>
+      <p>Home page</p>
+      <AcUnitIcon />
+    </div>
+  );
 };
 
 export default Home;
