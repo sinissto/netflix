@@ -1,9 +1,7 @@
+import Home from "./home/Home";
+
 function App() {
-  return (
-    <>
-      <p>Hello Netflix!</p>
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
